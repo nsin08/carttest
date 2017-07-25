@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0422A70F1F272A520045FFB2 /* CartTestFW.h in Headers */ = {isa = PBXBuildFile; fileRef = 0422A70D1F272A520045FFB2 /* CartTestFW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0422A7161F272A7E0045FFB2 /* Fibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422A7151F272A7E0045FFB2 /* Fibo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0422A70A1F272A520045FFB2 /* CartTestFW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartTestFW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0422A70D1F272A520045FFB2 /* CartTestFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartTestFW.h; sourceTree = "<group>"; };
 		0422A70E1F272A520045FFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0422A7151F272A7E0045FFB2 /* Fibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				0422A70D1F272A520045FFB2 /* CartTestFW.h */,
 				0422A70E1F272A520045FFB2 /* Info.plist */,
+				0422A7151F272A7E0045FFB2 /* Fibo.swift */,
 			);
 			path = CartTestFW;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 					0422A7091F272A520045FFB2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = U646SKG38Z;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0422A7161F272A7E0045FFB2 /* Fibo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +247,7 @@
 		0422A7131F272A520045FFB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U646SKG38Z;
@@ -254,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nks.CartTestFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +268,7 @@
 		0422A7141F272A520045FFB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U646SKG38Z;
